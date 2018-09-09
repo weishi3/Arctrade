@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "intern portal",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
   },
   "dependencies": {
     "history": "^4.6.3",

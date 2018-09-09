@@ -345,8 +345,8 @@ class HomePage extends React.Component {
 
                                                             <div className="card col-12 col-md-6" key={application.job_id}>
                                                                 <div className="card-body">
-                                                                    <div className="card-title"><h2>{application.title}</h2><br></br>
-                                                                        id:{application.job_id}   |  <a> view job detail</a>   | You applied on {application.date_submit}</div>
+                                                                    <div className="card-title"> <a onClick={this.handleJobDetail2.bind(this, application.job_id)}> <h2>{application.title} (job_id:{application.job_id})</h2></a> <br></br>
+                                                                        You applied on {application.date_submit}</div>
                                                                     <p className="card-text">
                                                                         <b>Location:</b> {application.location}<br></br>
                                                                         <b>Status:</b> {application.status}
